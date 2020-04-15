@@ -1,0 +1,55 @@
+body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+
+
+#navbar {
+    position: fixed;
+    top: 25%;
+    left: 0;
+    width: 64px;
+    height: 500px;
+    background-color: red;
+}
+
+#sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    background-color:blue;
+}
+#test{
+    width: 320;
+    margin: 0 auto;
+    height: 400px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#search{
+    margin: 0 auto;
+    width: 320;
+    height: 32px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+#wrapper {
+    background-color: white;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 450px;
+}
+#article {
+    width: 100%;
+    height: 200%;
+    background-color: yellow;
+}
