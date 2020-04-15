@@ -16,7 +16,12 @@ body{
     background-color: red;
 }
 
-
+#mainpage {
+    background-color: white;
+    margin: 0 auto;
+    height: 500px;
+    max-width: 1000px;
+}
 #search{
     margin: 0 auto;
     width: 320;
@@ -28,17 +33,11 @@ body{
 
 
 #wrapper {
-    background-color: grey;
     width: 100%;
     display: inline-flex;
-    /* padding-left: 50px;
-    padding-right: 50px; */
 }
 #article {
-    height: 500px;
-    background-color: yellow;
-    margin-left: 200px;
-    margin-right: 200px;
+    background-color: grey;
     flex:3;
 }
 
