@@ -4,7 +4,9 @@ body{
     border: 0;
 }
 
-
+#wrapper { width: 100%; display: inline-flex; } /*가로정렬용 태그를 감싸주는 부모태그*/
+#article { flex:7; } /*가로정렬용 태그 1*/
+#sidebar { flex:2; } /*가로정렬용 태그 2*/
 
 
 #navbar {
@@ -12,44 +14,34 @@ body{
     top: 25%;
     left: 0;
     width: 64px;
-    height: 500px;
-    background-color: red;
+    height: 400px;
+    background-color: rgb(200, 220, 240);
+    border-bottom-right-radius: 32px;
+    border-top-right-radius: 32px;
 }
 
 #mainpage {
-    background-color: white;
+    background-color: rgb(240,240,240);
     margin: 0 auto;
-    height: 500px;
+    height: 2000px;
     max-width: 1000px;
 }
 #search{
     margin: 0 auto;
-    width: 320;
+    width: 360px;
     height: 32px;
-    background-color: white;
-    margin-top: 10px;
+    background-color: rgb(200,220,240);
+    margin-top: 30px;
     margin-bottom: 10px;
+    border-radius: 32px;
 }
 
-
-#wrapper {
-    width: 100%;
-    display: inline-flex;
-}
-#article {
-    background-color: grey;
-    flex:3;
-}
-
-#sidebar{
-    flex:1;
-    background-color:blue;
-}
 #test{
-    width: 320;
+    width: 360px;
     margin: 0 auto;
     height: 400px;
-    background-color: white;
+    background-color: rgb(200,220,240);
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 32px;
 }
