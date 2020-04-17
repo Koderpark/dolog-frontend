@@ -2,7 +2,6 @@ body{ padding: 0; margin: 0; border: 0; }
 main{ height: 200%; background-color: white; }
 ul{ list-style: none; padding: 0; }
 
-
 #header{
     width: 300px;
     height: 100%;
@@ -27,8 +26,10 @@ ul{ list-style: none; padding: 0; }
     border-bottom: 1px solid rgb(220,230,240);
 }
 #mobileicon{ float: left; height: 48px; width: 48px; }
+#mobileoverlay{  }
 
 
+/*태블릿용 레이아웃*/
 @media ( max-width: 1023px ) {
     #header{
         width: 96px;
@@ -40,6 +41,8 @@ ul{ list-style: none; padding: 0; }
     .headertext{ display: none; }
     .headericon{ margin: 8px }
 }
+
+/*모바일용 레이아웃*/
 @media ( max-width: 512px ) {
     #header{
         width: 300px;

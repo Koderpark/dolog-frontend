@@ -1,5 +1,5 @@
 <head>
-    <title>dolog.dev</title>
+    <title>dolog</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
@@ -7,9 +7,14 @@
 
 <body>
     <section id="viewport">
+
+        <!--모바일 페이지에서만 나타나는 상단 고정바-->
         <div id="mobile">
             <img src="icon/menu-color.png" id="mobileicon" onclick="document.getElementById('header').style.display = 'block';">
         </div>
+        <div id="mobileoverlay"></div>
+
+        <!--모바일 페이지에서 숨김처리되는 좌측 고정바-->
         <header id="header">
             <ul>
                 <li class="headerbox"><img src="icon/home.png" class="headericon"><span class="headertext">홈</span></li>
@@ -22,6 +27,8 @@
                 <img src="" id="headerclose">
             </ul>
         </header>
+
+        <!--글과 오른쪽 고정바-->
         <main>
             <div id="article">
 
