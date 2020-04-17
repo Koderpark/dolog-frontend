@@ -1,43 +1,53 @@
-body{
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-header{
+body{ padding: 0; margin: 0; border: 0; }
+main{ height: 200%; background-color: white; }
+ul{ list-style: none; padding: 0; }
+
+
+#header{
     width: 300px;
     height: 100%;
     float: left;
-    background-color: yellow;
+    background-color: white;
     position: fixed;
+    border-right: 1px solid rgb(220,230,240);
 }
-main{
-    height: 200%;
-    background-color: greenyellow;
-}
+.headericon{width: 48px; height: 48px; margin: 8px;}
+.headertext{ font-size: 24px; font-weight: bold; float: right; line-height: 64px; margin: 0;}
+.headerbox { margin: 16px; width: 228px; height: 64px; padding: 0px 20px; border-radius: 24px;background-color: rgb(220,230,240); }
+
+
 #mobile{
     display: none;
     top: 0;
     left: 0;
     width: 100%;
     height: 48px;
-    background-color: grey;
     float: left;
     position: fixed;
+    border-bottom: 1px solid rgb(220,230,240);
 }
+#mobileicon{ float: left; height: 48px; width: 48px; }
+
+
 @media ( max-width: 1023px ) {
-    header{
-        width: 100px;
+    #header{
+        width: 96px;
     }
     #mobile{
         display: none;
     }
+    .headerbox { padding: 0; width: 64px; height: 64px;}
+    .headertext{ display: none; }
+    .headericon{ margin: 8px }
 }
-@media ( max-width: 767px ) {
-    header{
+@media ( max-width: 512px ) {
+    #header{
         width: 300px;
-        background-color: black;
         display: none;
     }
+    .headericon{ width: 48px; height: 48px; margin: 8px; }
+    .headertext{ display: block; font-size: 24px; font-weight: bold; float: right; line-height: 64px; margin: 0;}
+    .headerbox { margin: 16px; width: 228px; height: 64px; padding: 0px 20px; border-radius: 24px;background-color: rgb(220,230,240); }
     #mobile{
         display: block;
         float: left;

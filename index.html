@@ -8,20 +8,19 @@
 <body>
     <section id="viewport">
         <div id="mobile">
-            
+            <img src="icon/menu-color.png" id="mobileicon" onclick="document.getElementById('header').style.display = 'block';">
         </div>
-        <header>
-            <div>
-                <ul>
-                    <li>home</li>
-                    <li>user</li>
-                    <li>test</li>
-                    <li>test</li>
-                    <li>test</li>
-                    <li>test</li>
-                    <li>test</li>
-                </ul>
-            </div>
+        <header id="header">
+            <ul>
+                <li class="headerbox"><img src="icon/home.png" class="headericon"><span class="headertext">홈</span></li>
+                <li class="headerbox"><img src="icon/notification.png" class="headericon"><span class="headertext">알림</span></li>
+                <li class="headerbox"><img src="icon/message.png" class="headericon"><span class="headertext">알림</span></li>
+                <li class="headerbox"><img src="icon/subscribe.png" class="headericon"><span class="headertext">구독</span></li>
+                <li class="headerbox"><img src="icon/profile.png" class="headericon"><span class="headertext">프로필</span></li>
+                <li class="headerbox"><img src="icon/settings.png" class="headericon"><span class="headertext">설정</span></li>
+                <li class="headerbox"><img src="icon/write.png" class="headericon"><span class="headertext">글쓰기</span></li>
+                <img src="" id="headerclose">
+            </ul>
         </header>
         <main>
             <div id="article">
