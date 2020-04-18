@@ -27,7 +27,23 @@ ul{ list-style: none; padding: 0; }
 #mobileicon{ float: left; height: 48px; width: 48px; }
 #mobileoverlay{ display: none; }
 
-main{ height: 100%; background-color: white; padding: 0 350px;}
+main{
+    height: 100%; 
+    background-color: white;
+    padding-left: 350px;
+    padding-right: 50px;
+    display: flex;
+}
+#article{
+    flex: 5;
+    background-color: yellow;
+    margin: 0 10px;
+}
+#sidebar{
+    flex: 2;
+    margin: 0 10px;
+    background-color: greenyellow;s
+}
 
 
 /*태블릿용 레이아웃*/
@@ -38,6 +54,8 @@ main{ height: 100%; background-color: white; padding: 0 350px;}
     .headericon{ margin: 8px }
 
     #mobile{ display: none; }
+
+    main{ padding-left: 150px; }
 }
 
 /*모바일용 레이아웃*/
