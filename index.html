@@ -3,16 +3,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
+    <script type= "text/javascript" src= "index.js" ></script>
 </head>
 
 <body>
     <section id="viewport">
 
         <!--모바일 페이지에서만 나타나는 상단 고정바-->
-        <div id="mobile">
-            <img src="icon/menu-color.png" id="mobileicon" onclick="document.getElementById('header').style.display = 'block';">
-        </div>
-        <div id="mobileoverlay"></div>
+        <div id="mobile"><img src="icon/menu-color.png" id="mobileicon" onclick="overlay_out();"></div>
+        <div id="mobileoverlay" onclick="overlay_in();"></div>
 
         <!--모바일 페이지에서 숨김처리되는 좌측 고정바-->
         <header id="header">
@@ -34,7 +33,7 @@
 
             </div>
             <div id="sidebar">
-
+                 
             </div>
         </main>
     </section>
