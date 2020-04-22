@@ -47,8 +47,15 @@ main{
     position: fixed;
     top: 0; right: 0;
     display: block;
-    background-color: greenyellow;
+    border-left: 1px solid rgb(220,230,240);
+    /*background-color: greenyellow;*/
 }
+#sidebarsearch{ margin: 16px; padding: 8 20px; width: 228px; height: 32px; background-color: rgb(220,230,240); border-radius: 24px; }
+#sidebarsearch input{float: left; line-height: 32px; border: 0; width: 236px; height: 32px; border-radius: 24px;}
+.trendtitle{ width: 266px; margin: 0; height: 48px; border: 1px solid rgb(220,230,240); background-color: white; border-radius: 24px; }
+.trends{ width: 268px; margin: 16px; height: 270px; background-color: rgb(220,230,240); border-radius: 24px;}
+
+
 
 
 /*태블릿용 레이아웃*/
