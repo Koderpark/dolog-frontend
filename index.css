@@ -1,13 +1,15 @@
 body{ padding: 0; margin: 0; border: 0; }
+h1, ul{ margin: 0; padding: 0; list-style: none;}
 
 #header{
     width: 300px; height: 100%;
     float: left;
     position: fixed;
+    top: 0;
     display: block;
     background: white;
     border-right: 1px solid rgb(220,230,240);
-    z-index: 9; 
+    z-index: 999; 
 }
 .headericon{ width: 48px; height: 48px; margin: 8px; }
 .headertext{ font-size: 24px; font-weight: bold; float: right; line-height: 64px; margin: 0;}
@@ -24,9 +26,10 @@ body{ padding: 0; margin: 0; border: 0; }
     position: fixed;
     border-bottom: 1px solid rgb(220,230,240);
     background-color: white;
+    z-index: 997;
 }
 #mobileicon{ float: left; height: 48px; width: 48px; }
-#mobileoverlay{ display: none; z-index: 8;}
+#mobileoverlay{ display: none; z-index: 998; top: 0;}
 
 
 
@@ -34,10 +37,12 @@ body{ padding: 0; margin: 0; border: 0; }
 main{
     height: 100%; 
     background-color: white;
-    padding: 0 300px 0 300px;
+    padding: 0 300px;
+}
+main ul li img{
+    width: 100%;
 }
 #article{
-    background-color: whitesmoke;
     margin: 0 30px;
 }
 
@@ -60,11 +65,16 @@ main{
     -ms-overflow-style: none;
 }
 #sidebar::-webkit-scrollbar { display: none; }
-#sidebarsearch{ margin: 16px; padding: 8px; width: 252px; height: 32px; background-color: rgb(220,230,240); border-radius: 24px; }
+#search{ margin: 16px; padding: 8px; width: 252px; height: 32px; background-color: rgb(220,230,240); border-radius: 24px; }
 #searchbox{ font-size: 16px; float: left; line-height: 32px; border: 0; width: 252px; height: 32px; border-radius: 16px; padding-left: 10px;}
 
-.trendtitle{ width: 220px; margin: 0; height: 32px; font-size: 20px; line-height: 32px; font-weight: bold; background-color: white; border-radius: 24px; padding: 0 16px;}
+.trendtitle{ width: 220px; margin: 0; height: 32px; font-size: 20px; line-height: 32px; font-weight: bold; border-bottom: 1px solid rgb(180,190,200); padding: 0 16px;}
 .trend{ width: 252px; margin: 16px; background-color: rgb(220,230,240); border-radius: 24px; padding: 8px;}
+.trendarticle{ width: 220px; padding: 10 16px; margin: 8 0px;background-color: white; border-radius: 24px; }
+.trendarticle li{ margin: 10px; list-style: none; font-size: 20px; font-weight: bold;}
+
+
+
 
 
 
